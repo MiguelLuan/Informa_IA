@@ -1,46 +1,136 @@
 <!DOCTYPE html>
-<head lang="pt-br">
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos, Dionizio, Jonnas, Marcos, Miguel">
     <meta name="keywords" content="IA, Education, Chatbots">
-    <link rel="stylesheet" href="assests/css/pages/index.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/pages/index.css">
+    <link rel="shortcut icon" href="favicon/icone.jpeg" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
     <title>InformaIA</title>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="#" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="pages/sobre.html" rel="next">Sobre</a></li>
-                <li><a href="pages/hq.html">Hq</a></li>
-            </ul>
+        <nav class="navbar" style="height: 10vh;">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="logo col-1">
+                        <img src="image/logo.jpeg" alt="">
+                    </div>
+                    <div class="col-2 align-self-center offset-md-4">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="pages/sobre.html" rel="next">Sobre</a></li>
+                            <li><a href="pages/hq.html">Hq</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <section>
-            <h1>Nome do jornal</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur, ducimus tempora expedita, velit sequi suscipit atque fugit facilis eum quo odit! Quam et, totam aliquam consequuntur deleniti fugiat dolorem.</p>
+        <section class="text-center pt-4">
+            <h1 class="mw display-2">InformaIA</h1>
+            <p class="pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur, ducimus tempora expedita, velit sequi suscipit atque fugit facilis eum quo odit! Quam et, totam aliquam consequuntur deleniti fugiat dolorem.</p>
         </section>
     </header>
-    <main>
-        <section>
-            <h2>Seção1</h2>
-            <article></article>
-            <article></article>
+    <main class="container-fluid text-center">
+        <section class="text-center my-3">
+            <div>
+                <hr>
+                <h2 class="mw">Seção 1</h2>
+                <hr>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <article class="col-4 shadow" data-bs-toggle="modal" data-bs-target="#materia1">
+                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                    <h4 class="pb-2">Subtítulo</h4>
+                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                </article>
+                <article class="col-4 shadow" data-bs-toggle="modal" data-bs-target="#materia2">
+                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                    <h4 class="pb-2">Subtítulo</h4>
+                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                </article>
+            </div>
         </section>
-        <section>
-            <h2>Seção2</h2>
-            <article></article>
-            <article></article>
-            <article></article>
+        <section class="text-center my-5">
+            <div class="my-4">
+                <hr>
+                <h2 class="mw">Seção 2</h2>
+                <hr>
+            </div>
+            <div class="row justify-content-around">
+                <article class="col-4 shadow-lg">
+                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                    <h4 class="pb-2">Subtítulo</h4>
+                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                </article>
+                <article class="col-4 shadow-lg">
+                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                    <h4 class="pb-2">Subtítulo</h4>
+                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                </article>
+            </div>
         </section>
-        <section>
-            <h2>Seção2</h2>
-            <article></article>
+        <section class="text-center my-3">
+            <div class="my-3">
+                <hr>
+                <h2 class="mw">Seção 3</h2>
+                <hr>
+            </div>
+            <article>
+                <h2 class="display-5" style="color: black;">Tirinha</h2>
+            </article>
         </section>
     </main>
-    <footer>
-
+    <footer class="text-center">
+        <p class="pt-4">@Algúem</p>
     </footer>
+    <div class="modal fade" id="materia1" tabindex="-1" aria-labelledby="materiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 2rem;"></button>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <div class="text-center">
+                            <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                            <h4 class="pb-2">Subtítulo</h4>
+                        </div>
+                        <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary botao" data-bs-dismiss="modal">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="materia2" tabindex="-1" aria-labelledby="materiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 2rem;"></button>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <div class="text-center">
+                            <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                            <h4 class="pb-2">Subtítulo</h4>
+                        </div>
+                        <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary botao" data-bs-dismiss="modal">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
