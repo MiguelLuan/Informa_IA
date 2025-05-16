@@ -2,7 +2,98 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
+:root{
+    --main-color: #6A260C;
+    --green: #033910;
+    --blue: #300F85;
+    --soft-white: #f5f3f3;
+    --gray: #9b908e;
+}
+
+.bg-brown{
+    background-color: var(--main-color);
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-gray{
+    background-color: var(--gray);
+}
+
+body{
+    background-color: var(--soft-white);
+}
+
 html{
     font-size: 62.5%;
+}
+
+nav{
+    background-color: var(--main-color);
+}
+
+.logo{
+    width: 5vw;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ul li{
+    align-self: center;
+    display: inline;
+    margin: 0 1vw;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all .2s ease-in-out;
+}
+
+ul li a:hover{
+    color: var(--main-color);
+    padding: 4px;
+    background-color: white;
+    border: 2px dashed var(--main-color);
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.row{
+    width: 100%;
+}
+
+.mw{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    height: 5vh;
 }
