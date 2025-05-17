@@ -41,42 +41,39 @@ html{
 }
 
 nav{
+    min-height: 60px;
+    margin: 10px;
+    padding: 0 30px;
+    position: sticky;
+    top: 10px;
     background-color: var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.logo{
-    width: 5vw;
-}
-
-.logo img{
+nav img{
+    width: 5vh;
     border-radius: 50%;
 }
-
-img{
-    width: 100%;
-    height: 100%;
+nav ul{
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
-
-ul li{
-    align-self: center;
-    display: inline;
-    margin: 0 1vw;
-}
-
-ul li a{
-    color: white;
+nav a{
+    font-size: 1.4rem;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 1.8rem;
-    transition: all .2s ease-in-out;
+    color: #fff;
+    transition: padding .5s ease;
 }
-
-ul li a:hover{
+nav a:hover{
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
     color: var(--main-color);
-    padding: 4px;
-    background-color: white;
-    border: 2px dashed var(--main-color);
-    border-radius: 5px;
-    font-weight: 400;
+    border-radius: 10px;
 }
 
 .row{
