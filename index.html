@@ -16,7 +16,7 @@
 <body>
 
     <nav>
-        <img src="images/logan.jpeg" alt="">
+        <img src="images/logo.jpeg" alt="" class="py-3">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="pages/sobre.html" rel="next">Sobre</a></li>
@@ -33,45 +33,47 @@
         <section class="text-center my-3">
             <div>
                 <hr>
-                <h2 class="mw">Seção 1</h2>
+                <h2 class="mw">O básico da IA</h2>
                 <hr>
             </div>
             <div class="row justify-content-around mt-5">
-                <article class="col-4 shadow" data-bs-toggle="modal" data-bs-target="#materia1">
-                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
-                    <h4 class="pb-2">Subtítulo</h4>
-                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                <article class="col-lg-4 shadow">
+                    <h3 class="py-2 mw display-6"><strong>Título</strong></h3>              
+                    <p class="px-2">lide</p>
+                    <button class="botao btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#materia1">Ler mais</button>
                 </article>
-                <article class="col-4 shadow" data-bs-toggle="modal" data-bs-target="#materia2">
+                <article class="col-lg-4 shadow">
                     <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
                     <h4 class="pb-2">Subtítulo</h4>
                     <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                    <button class="botao btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#materia2">Ler mais</button>
                 </article>
             </div>
         </section>
         <section class="text-center my-5">
             <div class="my-4">
                 <hr>
-                <h2 class="mw">Seção 2</h2>
+                <h2 class="mw">IA na atualidade</h2>
                 <hr>
             </div>
             <div class="row justify-content-around">
-                <article class="col-4 shadow-lg">
-                    <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
-                    <h4 class="pb-2">Subtítulo</h4>
-                    <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                <article class="col-lg-4 shadow">
+                    <h3 class="py-2 mw display-6"><strong>Potenciais da inteligência artificial versus potenciais da inteligência humana</strong></h3>              
+                    <p class="px-2">Apesar de o Teste de Turing indicar que uma IA pode ser considerada inteligente ao enganar um humano, especialistas apontam limitações nesse critério. Enquanto a inteligência artificial se destaca pela capacidade de processar grandes volumes de dados com rapidez, a cognição humana segue insuperável em criatividade, improviso e empatia. Pesquisadores defendem que, mais do que rivalizar, homem e máquina podem se complementar para enfrentar os desafios do mundo moderno.</p>
+                    <button class="botao btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#materia3">Ler mais</button>
                 </article>
-                <article class="col-4 shadow-lg">
+                <article class="col-lg-4 shadow-lg">
                     <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
                     <h4 class="pb-2">Subtítulo</h4>
                     <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                    <button class="botao btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#materia4">Ler mais</button>
                 </article>
             </div>
         </section>
         <section class="text-center my-3">
             <div class="my-3">
                 <hr>
-                <h2 class="mw">Seção 3</h2>
+                <h2 class="mw">Tirinha</h2>
                 <hr>
             </div>
             <article>
@@ -104,6 +106,62 @@
         </div>
     </div>
     <div class="modal fade" id="materia2" tabindex="-1" aria-labelledby="materiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 2rem;"></button>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <div class="text-center">
+                            <h3 class="py-2 mw display-4"><strong>Título</strong></h3>
+                            <h4 class="pb-2">Subtítulo</h4>
+                        </div>
+                        <p class="px-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt inventore quod impedit dicta quisquam necessitatibus culpa quam deleniti, accusantium, eum veritatis consequuntur perspiciatis provident eveniet. Ea debitis sunt perspiciatis nisi.</p>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary botao" data-bs-dismiss="modal">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="materia3" tabindex="-1" aria-labelledby="materiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="font-size: 2rem;"></button>
+                </div>
+                <div class="modal-body">
+                    <article class="ms-4 me-2">
+                        <div class="text-center">
+                            <h3 class="py-2 mb-3 mw display-5"><strong>Potenciais da inteligência artificial versus potenciais da inteligência humana</strong></h3>
+                        </div>
+                        <p class="px-2">Apesar de o Teste de Turing indicar que uma IA pode ser considerada inteligente ao enganar um humano, especialistas apontam limitações nesse critério. Enquanto a inteligência artificial se destaca pela capacidade de processar grandes volumes de dados com rapidez, a cognição humana segue insuperável em criatividade, improviso e empatia. Pesquisadores defendem que, mais do que rivalizar, homem e máquina podem se complementar para enfrentar os desafios do mundo moderno.</p>
+                        <h4>Um computador pode ser inteligente?</h4>
+                        <p class="px-2">O <strong>Teste de Turing</strong>, proposto por <strong>Alan Turing</strong>, matemático e cientista da computação inglês, consiste basicamente em fazer uma máquina se passar por um humano. Caso ela seja capaz de enganar um humano real, então pode ser considerada inteligente. Todavia, o teste não é um “medidor de inteligência” perfeito, visto que uma máquina pode ser considerada inteligente mesmo sem saber imitar perfeitamente um ser humano, ou uma pessoa pode ser enganada por um computador não muito inteligente, como defende o cientista da computação estadunidense John Mccarthy. </p>
+                        <p class="px-2">Então, não há como saber se uma máquina é inteligente? Uma resposta para essa pergunta vem da pesquisadora brasileira <strong>Lucia Santaella</strong>, que afirma: “[...] a IA (Inteligência Artificial) é inteligente porque o computador adquiriu o potencial de aprender e tomar decisões com base nas informações que recebe” (Santaella, 2023, p. 187).</p>
+                        <h4>Máquina versus Homem</h4>
+                        <p class="px-2">Contudo, um ponto importante a se considerar é que a inteligência artificial e a inteligência humana possuem potenciais distintos. Nesse sentido, as pesquisadoras brasileiras <strong>Olira Rodrigues</strong> e <strong>Karoline Rodrigues</strong> destacam, em seus estudos, aspectos relevantes da capacidade cognitiva humana: </p>
+                        <p class="px-2 citacao">“[...] reusamos os conceitos; produzimos compreensões e aplicações para as coisas; transferimos aprendizagem por analogia, usando novas situações e identificando outras circunstâncias que são similares para novos cenários; temos aprendizagem estatística ao processar dados; generalizamos o padrão com poucos exemplos e aplicamos; intuímos novas respostas ao aplicar uma tendência; e obtemos conhecimento por transferência e senso comum [...]”(Rodrigues; Rodrigues, 2023, p. 5).</p>
+                        <p class="px-2">Por outro lado, as IAs aprendem utilizando diversos dados (imagens, textos, sons e números), relacionando-os, identificando padrões e corrigindo erros com a ajuda de cientistas. Todo esse processo é <strong>repetido uma quantidade exorbitante de vezes</strong> até que a IA seja capaz de gerar respostas satisfatórias.</p>
+                        <p class="px-2">Ao comparar uma inteligência artificial com um ser humano sob o aspecto cognitivo, pode-se dizer que ela consegue processar uma quantidade maior de informações com mais rapidez, não erra por cansaço e armazena grandes volumes de dados, podendo acessá-los rapidamente.</p>
+                        <p class="px-2">Em contraponto, o ser humano possui uma inteligência mais flexível: é capaz de improvisar, criar soluções inéditas, imaginar, aprender com poucos exemplos e por analogia, compreender <strong>sentimentos e subjetividades</strong> , interpretar contextos sociais, tomar decisões com base em valores morais e possuir consciência de si mesmo.</p>
+                        <p class="px-2">Existe, portanto, uma diferença entre ambas. Não se trata de qual é melhor ou pior, mas sim de reconhecer que podem se complementar, contribuindo para solucionar os problemas da humanidade com mais <strong>eficiência e rapidez</strong>.</p>
+                        <p><strong>Referências</strong></p>
+                        <p class="px-2">SANTAELLA, Lucia. A inteligência artificial é inteligente? São Paulo: Almedina, 2023. <br>
+MCCARTHY, John. What is Artificial Intelligence?. Stanford University, [s.l.], 12, nov. 2007. Disponível em: http://jmc.stanford.edu/articles/whatisai/whatisai.pdf. Acesso em: 13 maio 2025. <br>
+RODRIGUES, Karoline Santos; RODRIGUES, Olira Saraiva. A inteligência artificial na educação: os desafios do ChatGPT. Texto Livre: Linguagem e tecnologia, Belo Horizonte, v. 16, e. 45997, 01 set. 2023. Disponível em: https://periodicos.ufmg.br/index.php/textolivre/article/view/45997. Acesso em: 29 abr. 2025.
+</p>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary botao" data-bs-dismiss="modal">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="materia4" tabindex="-1" aria-labelledby="materiaModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">

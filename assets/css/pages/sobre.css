@@ -1,1 +1,9 @@
-@import url("../global.css")
+@import url("../global.css");
+
+p{
+    font-size: 1.5rem;
+}
+
+aside p{
+    font-size: 1rem;
+}

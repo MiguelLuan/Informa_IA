@@ -15,14 +15,14 @@ h2{
 }
 
 hr{
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
     opacity: 100%;
 }
 
 .row article{
     border: 2px solid black;
     border-radius: 1em;
-    height: 30vh;
+    min-height: 30vh;
     position:relative;
     top:0;
     transition: all .2s ease-in-out;
@@ -51,8 +51,23 @@ article p{
     color: var(--main-color);
     border-color: var(--main-color);
     transition: all .2s ease-in-out;    
+    padding: 5px;
 }
 
 .botao:hover{
     background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.citacao{
+    margin-left: 40rem;
+}
+
+@media (max-width: 992px) {
+    .row article{
+        margin-top: 20px;    
+    }
+    p{
+        font-size: 2rem;
+    }
 }
