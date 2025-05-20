@@ -57,7 +57,8 @@ nav img{
     border-radius: 50%;
 }
 nav ul{
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     gap: 30px;
