@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
 *, *::before,*::after{
     margin: 0;
     padding: 0;
@@ -51,6 +53,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+    opacity: .99;
 }
 nav img{
     width: 7vh;
@@ -76,7 +80,42 @@ nav a:hover{
     color: var(--main-color);
     border-radius: 10px;
 }
-
+.container1{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1 h1{
+    margin-bottom: 30px;
+}
+.container1 p{
+    width: 50vw;
+}
+.container2,.container3{
+    height: 70vh;
+}
+.container2_1 :where(hr,h2),.container3_1 :where(hr,h2),.container4_1 :where(h2,hr){
+    margin: 0 !important;
+}
+.container2_1 h2,.container3_1 h2,.container4_1 h2{
+    padding: 10px;
+}
+.container2_2,.container3_2{
+    margin: 0 !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.container4{
+    height: 80vh;
+}
+.container4 article{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .row{
     width: 100%;
 }
