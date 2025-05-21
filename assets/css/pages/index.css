@@ -14,6 +14,10 @@ h2{
     font-size: 2.6rem;
 }
 
+h4{
+    color: var(--main-color);
+}
+
 hr{
     border: 1px solid var(--main-color);
     opacity: 100%;
@@ -23,6 +27,7 @@ hr{
     border: 2px solid black;
     border-radius: 1em;
     min-height: 30vh;
+    min-width: 40vw;
     position:relative;
     top:0;
     transition: all .2s ease-in-out;
