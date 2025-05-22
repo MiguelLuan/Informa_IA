@@ -8,9 +8,15 @@ aside p{
     font-size: 1rem;
 }
 
+aside{
+    align-content: center;
+}
+
 .col-md-9 p{
     text-align: justify;
     text-indent: 1.5vw;
+    margin: 2vh 2vh 4vh 1vh;
+
 }
 
 main{
