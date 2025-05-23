@@ -102,8 +102,7 @@ article p{
     font-size: 1.7rem;
     align-self: end;
 }
-
-.botao{
+.container3_1 .botao_tirinha{
     padding: 10px;
     font-size: 1.8rem;
     background-color: var(--main-color);
@@ -113,10 +112,22 @@ article p{
     transition: all .2s ease-in-out;    
 
 }
-
-.botao:hover{
+.botao_tirinha:hover{
     background-color: #d6d4d4;
     color: var(--main-color)
+}
+.botao{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    border-color: var(--main-color);
+    transition: all .2s ease-in-out;
+    padding: 5px;    
+
+}
+.botao:hover{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: #fff;
 }
 
 .botao:focus{

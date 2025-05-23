@@ -104,7 +104,6 @@ footer{
     min-height: 20vh;
     width: 99.4vw;
 }
-
 @media (max-width: 992px) {
     nav a{
         font-size: 2rem;
