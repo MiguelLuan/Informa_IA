@@ -15,7 +15,7 @@ aside{
 .col-md-9 p{
     text-align: justify;
     text-indent: 1.5vw;
-    margin: 2vh 2vh 4vh 1vh;
+    margin: 2vh 2vw  4vh 1vw;
 
 }
 
@@ -25,4 +25,41 @@ main{
 
 footer{
     min-width: 100vw;
+}
+
+.avatar{
+    width: 3.5vw;
+    height: 7vh;
+    margin-left: 4vw;
+    border: 1px solid black;
+    border-radius:100%;
+    -moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    padding: 0;
+}
+
+.avatar-byte{
+    margin: 0 1vw 0 0;
+}
+
+.msg{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px 50px 30px;
+    padding: 5px;
+    margin: 2vh 1vw 2vh .5vw;
+    text-align: justify;
+    box-shadow:  5px 5px 5px var(--gray);
+}
+
+.msg-r{
+    margin: 2vh 1vw 2vh 3vw;
+    border-radius: 30px 5px 50px 50px;
+    box-shadow:  -5px 5px 5px var(--gray);
+}
+
+.msg *{
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+    color: var(--soft-white);
 }
