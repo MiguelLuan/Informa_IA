@@ -8,19 +8,23 @@ p{
     font-size: 1.5rem;
 }
 
+.pt-4 p{
+    width: 60%;
+    margin: 0 auto;
+}
+
 h2{
     color: black;
     font-weight: 900;
     font-size: 2.6rem;
-}
-
-h4{
-    color: var(--main-color);
+    word-spacing: 4px;
 }
 
 hr{
     border: 1px solid var(--main-color);
     opacity: 100%;
+    width: 90%;
+    justify-self: center;
 }
 
 .row article{
@@ -43,6 +47,7 @@ h3{
 }
 
 h4{
+    color: var(--main-color);
     font-size: 2rem;
     font-weight: 300;
 }
