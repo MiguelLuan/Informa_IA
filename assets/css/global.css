@@ -55,6 +55,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 nav img{
     width: 7vh;
@@ -99,7 +100,8 @@ nav a:hover{
 footer{
     background-color: var(--main-color);
     color: white;
-    min-height: 8vh;
+    padding: 0 2vw;
+    min-height: 20vh;
     width: 99.4vw;
 }
 
