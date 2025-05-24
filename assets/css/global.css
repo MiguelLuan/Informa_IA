@@ -81,6 +81,15 @@ nav a:hover{
     border-radius: 10px;
 }
 
+ul{
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ul li{
+    margin: 2vh 0;
+}
+
 .mw{
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
@@ -138,6 +147,7 @@ ol li p{
 .modal-body h4{
     margin-left: 2vw;
 }
+
 @media (max-width: 992px) {
     nav a{
         font-size: 2rem;
