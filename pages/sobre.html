@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<head lang="pt-br">
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta nome="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos, Dionizio, Jonnas, Marcos, Miguel">
     <meta name="keywords" content="IA, Education, Chatbots">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/pages/sobre.css">
-    <link rel="shortcut icon" href="../images/logo16x16.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/icone.jpeg" type="image/x-icon">
     <title>InformaIA</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="../images/logo.jpeg" alt="" class="py-3" >
+            <img src="../images/logo.jpeg" alt="" class="py-3">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="pages/sobre.html" rel="next">Sobre</a></li>
@@ -24,13 +25,13 @@
         <section>
             <article class="text-center">
                 <h1 class="mw mt-5 display-5">Sobre esta Edição</h1>
-                <p></p>
+                <p>Nesta página, o robozinho <strong style="color: var(--blue);">Byte</strong> responderá as principáis duvidas dos usuários sobre esta edição do InformaIA.</p>
             </article>
         </section>
         <hr>
         <section class="row">
             <img src="../images/avatar.png" alt="" class="col-2 avatar">
-            <div class="msg col-10 bg-brown">
+            <div class="msg col-10 bg-brown" id="obj">
                 <h4 class="mw display-6">Usuário</h4>
                 <p>Qual foi o objetivo dessa edição do InformaIA?</p>
             </div>
@@ -40,7 +41,7 @@
             </div>
             <img src="../images/logo.jpeg" alt="" class="col-2 avatar avatar-byte">
             <img src="../images/avatar.png" alt="" class="col-2 avatar">
-            <div class="msg col-10 bg-brown">
+            <div class="msg col-10 bg-brown" id="met">
                 <h4 class="mw display-6">Usuário</h4>
                 <p>De que forma vocês formularam essa edição?</p>
             </div>
@@ -50,7 +51,7 @@
             </div>
             <img src="../images/logo.jpeg" alt="" class="col-2 avatar avatar-byte">
             <img src="../images/avatar.png" alt="" class="col-2 avatar">
-            <div class="msg col-10 bg-brown">
+            <div class="msg col-10 bg-brown" id="info">
                 <h4 class="mw display-6">Usuário</h4>
                 <p>Me fale sobre o trabalho científico usado como base. O título, os autores, a instituição, a revista e a data de publicação.</p>
             </div>
@@ -67,7 +68,31 @@
             <img src="../images/logo.jpeg" alt="" class="col-2 avatar avatar-byte">
         </section>
     </main>
-    <footer class="row" style="width: 100%;">
-        <p class="col-lg-4 align-self-center ps-4">&copy; 2025 InformaIA. Todos os direitos reservados.</p>
+    <footer class="row">
+        <div class="col-lg-4 align-self-center my-4 ms-5">
+            <h5 class="mw display-6 border-bottom">Contatos</h5>
+            <div class="ms-4">
+                <p class="mt-3"><a href=""><img src="../images/linkedin-original.svg" alt="" class="img-dados">Carlos Oliveira</a></p>
+                <p class="mt-2"><a href=""><img src="../images/linkedin-original.svg" alt="" class="img-dados">Dionizio Neto</a></p>
+                <p class="mt-2"><a href=""><img src="../images/linkedin-original.svg" alt="" class="img-dados">José Silva</a></p>
+                <p class="mt-2"><a href=""><img src="../images/linkedin-original.svg" alt="" class="img-dados">Marcos Figueiredo</a></p>
+                <p class="mt-2"><a href=""><img src="../images/linkedin-original.svg" alt="" class="img-dados">Miguel Leite</a></p>
+            </div>
+        </div>        
+        <div class="col-lg-4 align-self-start my-4 offset-md-2">
+            <h5 class="mw display-6 border-bottom">Sobre</h5>
+            <div class="ms-4">
+                <ul>
+                    <li><a href="#obj">Objetivo</a></li>
+                    <li><a href="#met">Metologia</a></li>
+                    <li><a href="#info">Informações do artigo</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="text-center">  
+            <p>&copy; 2025 InformaIA. Todos os direitos reservados.</p>
+        </div>
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
