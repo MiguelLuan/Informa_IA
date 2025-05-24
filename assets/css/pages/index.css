@@ -79,16 +79,21 @@ article p{
     margin-top: 25px;
 }
 .container3_1 svg{
-    place-self: end center;
+    width: 30px;
+    position: relative;
+    left: -45px;
+    top: 92px;
+
 }
-.container3:hover svg{
-    animation: vibrar .2s infinite;
+.vibrar{
+    animation: vibrar .1s linear infinite;
 }
 
 .container3_1{
     margin: 0;
     padding: 0;
     max-width: 100% !important;
+    position: relative;
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 300px 100px 230px 70px;
