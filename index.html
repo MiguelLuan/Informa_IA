@@ -79,6 +79,7 @@
             </div>
             <article class="container3_1">
                 <img src="" alt="robô flutuando">
+                <audio id="Byte_voz" src="audio/WhatsApp Audio 2025-05-24 at 15.28.59.mpeg"></audio>
                 <svg fill="#000000" version="1.1" id="vibrar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     width="50px" viewBox="0 0 522.234 522.234"
                     xml:space="preserve">
@@ -292,6 +293,8 @@ RODRIGUES, Karoline Santos; RODRIGUES, Olira Saraiva. A inteligência artificial
                 clearTimeout(parada);
             }
 
+            document.querySelector("#Byte_voz").play()
+
             vibrar.classList.remove("vibrar"); 
 
             requestAnimationFrame(() => {
@@ -300,8 +303,11 @@ RODRIGUES, Karoline Santos; RODRIGUES, Olira Saraiva. A inteligência artificial
 
             parada = setTimeout(() => {
                 vibrar.classList.remove('vibrar');
-            }, 5000);
+            }, 18000);
+
         });
+
     </script>
+
 </body>
 </html>
