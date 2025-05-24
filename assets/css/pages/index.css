@@ -86,7 +86,7 @@ article p{
 
 }
 .vibrar{
-    animation: vibrar .1s linear infinite;
+    animation: vibrar .1s linear .5s infinite;
 }
 
 .container3_1{

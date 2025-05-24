@@ -20,18 +20,72 @@
     <main>
         <section>
             <h1>As Aventuras de Byte: ChatGPT e Educação</h1>
-            <article>
-                <img src="#" alt="">
-                <img src="#" alt="">
-                <img src="#" alt="">
+            <article class="container">
+                <img class="box atual" src="../images/Quadro1.jpeg" alt="">
+                <img class="box" src="../images/Quadro2.jpeg" alt="">
+                <img class="box" src="../images/Quadro3.jpeg" alt="">
+                <img class="box" src="../images/Quadro4.jpeg" alt="">
+                <img class="box" src="../images/Quadro5.jpeg" alt="">
+                <img class="box" src="../images/Quadro6.jpeg" alt="">
+                <img class="box" src="../images/Quadro7.jpeg" alt="">
+                <img class="box" src="../images/Quadro8.jpeg" alt="">
             </article>
-            <img src="" alt="">
-            <a href="#" class="arrow-button"><img src="../images/seta2.png" alt="seta para continuar a próxima página"></a>
-
+            <p> Clique na imagem para ver a próxima tirinha ➡️</p>
+            <button id="voltar" class="button_off">Voltar</button>
         </section>
 
     </main>
     <footer>
 
     </footer>
+    <script>
+
+        let quadrinhos = document.querySelectorAll(".box");
+        let tirinha = document.querySelector(".container");
+        let botão = document.querySelector("#voltar")
+
+        let posicao_atual = 0;
+
+        function mostrar_quadro(posicao){
+
+            quadrinhos.forEach((quadro) => {
+                quadro.classList.remove("atual");
+            });
+
+            quadrinhos[posicao].classList.add("atual");
+        
+            visualizar_button()
+        }
+
+        function visualizar_button(){
+            
+            if (posicao_atual > 0){
+                botão.classList.remove("button_off");
+                botão.classList.add("button_on");
+            }else{
+                
+                botão.classList.remove("button_on");
+                botão.classList.add("button_off");
+               
+            }
+        }
+
+        tirinha.addEventListener("click", () => {
+            posicao_atual = ( posicao_atual + 1) % quadrinhos.length;
+            mostrar_quadro(posicao_atual);
+        }) 
+
+        botão.addEventListener("click", () => {
+
+            if (posicao_atual > 0){
+
+                posicao_atual = posicao_atual - 1;
+                mostrar_quadro(posicao_atual);
+
+            }
+        })
+
+        mostrar_quadro(posicao_atual);
+
+    </script>
 </body>
