@@ -40,7 +40,7 @@ section{
     align-items: center;
     padding-bottom: 20px;
 }
-article{
+article.container_tirinha{
     width: 48vw;
     height: 70vh;
     margin: 0 auto;
@@ -89,9 +89,6 @@ p{
     display: block;
 }
 
-footer{
-    background-color: #023047;
-}
 button{
     border: none;
     margin-top: 10px;
@@ -104,4 +101,13 @@ button{
 }
 button:hover{
     transform: scale(1.2)
+}
+footer{
+    background-color: #023047;
+}
+footer .text-center{
+    background-color: #001b29;
+}
+.text-center p{
+    margin: 0 0 10px;
 }
