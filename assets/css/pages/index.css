@@ -16,6 +16,28 @@
         transform: translate( 0 , 0)
     }
 }
+@keyframes flutuar{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform:  translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes sombra{
+    0%{
+        transform: translateX(-50%) rotateX(80deg) scale(1);
+    }
+    50%{
+        transform: translateX(-50%) rotateX(80deg) scale(1.5);
+    }
+    100%{
+        transform: translateX(-50%) rotateX(80deg) scale(1)
+    }
+}
 h1{
     font-size: 5rem;
 }
@@ -74,17 +96,7 @@ article p{
     text-align: justify;
     text-indent: 2vw;
 }
-.container3_1 span{
-    display: inline-block;
-    margin-top: 25px;
-}
-.container3_1 svg{
-    width: 30px;
-    position: relative;
-    left: -45px;
-    top: 92px;
 
-}
 .vibrar{
     animation: vibrar .1s linear .5s infinite;
 }
@@ -96,9 +108,42 @@ article p{
     position: relative;
     display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 300px 100px 230px 70px;
+    grid-template-rows: 350px 50px 230px 70px;
     justify-content: center;
     align-items: center;
+}
+#Byte{
+    width: 300px;
+    place-self: center center;
+    animation: flutuar 5s ease-in-out infinite;
+}
+#container_Byte{
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+#container_Byte::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000000d2;
+    transform: translateX(-50%) rotateX(70deg);
+    animation: sombra 5s ease-in-out infinite;
+}
+.container3_1 span{
+    display: inline-block;
+    margin-top: 25px;
+}
+.container3_1 svg{
+    width: 30px;
+    position: relative;
+    left: -45px;
+    top: 70px;
+
 }
 .container3_1 p{
     margin: 0 ;
