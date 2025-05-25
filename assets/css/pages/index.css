@@ -108,7 +108,7 @@ article p{
     position: relative;
     display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 350px 50px 230px 70px;
+    grid-template-rows: 300px 50px 230px 70px;
     justify-content: center;
     align-items: center;
 }
