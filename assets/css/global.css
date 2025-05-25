@@ -38,6 +38,14 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Lacquer';
+  src: url('../../fonts/Lacquer/Lacquer-Regular') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root{
     --main-color: #6A260C;
     --green: #033910;
